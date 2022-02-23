@@ -1,0 +1,173 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[]{amsthm}
+\usepackage{amsmath}
+\usepackage[]{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[letterpaper, margin=1.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\decimalpoint
+
+\begin{document}
+    \begin{titlepage}
+        \begin{center}
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.13]{logo_itesm.png}\\ % Logo de la institución
+            \end{figure}
+        \vspace{5cm}
+        \LARGE{Instituto Tecnológico y de Estudios Superiores de Monterrey}\\
+        \fontsize{12}{14}\selectfont
+        \vspace{1cm}
+        \textbf{Caracterización de entornos}\\ % Nombre de la tarea
+        \vspace{0.7cm}
+        Óscar Antonio Banderas Álvarez \\
+        \vspace{0.2cm}
+        A01568492 \\
+        \vspace{0.2cm}
+        Juan Pablo Echeagaray González\\ % Nombre de autor 1
+        \vspace{0.2cm}
+        A00830646 \\ % Matrícula autor 1
+        \vspace{0.2cm}
+        Erika Martínez Meneses \\
+        \vspace{0.2cm}
+        A01028621 \\
+        \vspace{0.2cm}
+        Emily Rebeca Méndez \\
+        \vspace{0.2cm}
+        A00830768 \\
+        \vspace{0.7cm}
+        Diseño de agentes inteligentes\\ % Materia
+        \vspace{0.2cm}
+        TC2032.101\\ % Clave de la materia
+        \vspace{0.2cm}
+        Juan Emmanuel Martínez Ledesma \\ % Nombre del profesor
+        \vspace{0.7cm}
+        25 de febrero del 2022\\ % Fecha de entrega
+        \end{center}
+    \end{titlepage}
+
+    \section{Descripción de PEAS, entornos y agentes}
+
+        \subsection{Realización de una rutina de piso de gimnasia}
+            \subsubsection{PEAS}
+                \begin{enumerate}
+                    \item Desempeño
+                    \item Ambiente
+                    \item Actuadores
+                    \item Sensores
+                \end{enumerate}
+
+            \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item Pp
+                \end{enumerate}
+            \subsubsection{Tipo de agente}
+                
+        \subsection{Exploración de la superficie de los océanos de Titán}
+
+            \subsubsection{PEAS}
+                \begin{enumerate}
+                    \item Desempeño: área cubierta, energía utilizada, número de muestras recolectadas
+                    \item Ambiente: océanos de Titán
+                    \item Actuadores: aceleradores, frenos, volantes, alguna herramienta a utilizar para tomar muestras, medio de comunicación con la Tierra
+                    \item Sensores: cámara, barómetro (Titán tiene atmósfera)
+            \end{enumerate}
+
+            \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item Podemos decir que el ambiente es prácticamente completamente  observable, ya que el agente tendrá los sensores necesarios para recibir toda la información pertinente.
+                    \item El entorno puede considerarse como teniendo un solo agente, no esperaríamos encontrar vida u otros seres en este lugar remoto
+                    \item (temp) Ni idea en qué categoría podemos ponerlo, bien podríamos decir que es determinístico, pero creo que en la vida real se usaría más una clasificación de estocástico
+                    \item El ambiente es secuencial, las decisiones del agente respecto a su movimiento afectarán las decisiones que tome en el futuro
+                    \item El entorno es dinámico, ya que el ambiente siempre está cambiando y el agente tiene que estar siempre tomando una decisión de que hacer. 
+                    \item El ambiente también debe de ser visto como continuo, el agente tendrá que estar recibiendo y procesando información en todo momento
+                    \item El ambiente puede ser visto como conocido, ya que al agente se le pueden enseñar las propiedades físicas del lugar.
+                \end{enumerate}
+
+            \subsubsection{Tipo de agente}
+                Para esta situación creemos que un agente basado en utilidad sería la mejor opción. Durante la misión, el agente tendrá la meta de explorar lo más posible este nuevo terreno, pero para que la misión sea exitosa, queremos que esta exploración sea llevada a cabo de la mejor manera posible, ahorrando energía, cubriendo la mayor área posible y manteniendo al agente lo más lejos del peligro posible.
+
+                % TODO Tal vez preguntarle al profesor respecto a la necesidad de este agente de aprender, puede que nos dé una mejor aclaración del tipo de situaciones que si requieren un aprendizaje
+
+        \subsection{Un juego de soccer}
+            \subsubsection{PEAS}
+                \begin{enumerate}
+                    \item Desempeño: ganar el juego, número de goles (tanto a favor como en contra), número de tarjetas, número de faltas,(temp) lesiones
+                    \item Ambiente: cancha de juego, otros jugadores, balón
+                    \item Actuadores: extremidades del agente excepto manos con excepciones, bocina
+                    \item Sensores: cámara, micrófono, acelerómetros, sensores de orientación
+                \end{enumerate}
+
+            \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item El ambiente será parcialmente observable prácticamente, a menos que haya una comunicación entre todos los miembros del equipo para que así cada uno de los agentes tenga prácticamente toda la información relevante del juego
+                    \item El entorno es multiagente, cooperativo entre los miembros de un mismo equipo, y competitivo contra los miembros del equipo contrario
+                    \item (temp) (creo que el ambiente debe de tratarse como estocástico)
+                    \item El entorno es de carácter secuencial, las acciones del agente pueden afectar todo lo que queda del partido
+                    \item El entorno es dinámico, el balón o los jugadores casi siempre están en movimiento pero en si el entorno siempre está cambiando. 
+                    \item El entorno también es de carácter continuo, ya que este le demandará al agente de algún tipo de acción en todo momento
+                    \item El ambiente en este caso es conocido, el agente puede ser provisto de un modelo  físico de la realidad.
+                \end{enumerate}
+
+            \subsubsection{Tipo de agente}
+                Un agente basado en utilidad sería un buen prospecto para esta tarea, ya que la meta de ganar el juego y maximizar la diferencia de goles puede ser llevada a cabo de diferentes maneras, queremos que el agente lo realice de la manera más eficiente posible.
+
+                % TODO Especificar qué es lo que necesita aprender
+
+        \subsection{Compra de libros usados de IA en internet}
+            
+            \subsection{Práctica de tennis contra la pared}
+            \subsubsection{PEAS}
+            \begin{enumerate}
+                \item Desempeño: Número de peloteo continuo, número de golpes con derecha o revés.
+                \item Ambiente: Pared, pelota, raqueta.
+                \item Actuadores: Extremidades del agente.
+                \item Sensores: Cámara, fuerza, sensor de orientación, sensor de aproximación
+            \end{enumerate}
+
+            \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item El ambiente es totalmente observable, ya que se tiene un visual completo de la pared y la pelota, además que solo se necesita la visualización de la pelota y la pared para poder realizar esta tarea. 
+                    \item El entorno es de solo un agente, ya que solo es el agente con la raqueta y la pared, otros agentes no entran en juego.
+                    \item El ambiente es determinístico, ya que con una cierta fuerza y ángulo puedes saber a ciencia cierta dónde irá la bola antes y después de pegar la pared por lo cual se puede saber la trayectoria de la pelota, por lo cual el siguiente estado del medio está totalmente determinado por el estado actual y la acción ejecutada por el agente.
+                    \item Este se puede definir como secuencial, ya que la decisión de con qué fuerza pegar y con qué ángulo va a afectar el cómo vas a pegar y donde después, por la cual la decisión que se toma al momento afecta la decisión que se tomará después y así consecutivamente.
+                    \item El entorno es dinámico ya que el agente tiene que estar al pendiente de la pelota, por lo cual el entorno está cambiando.
+                    \item Se puede pensar que este caso es de carácter continuo, ya que a todo momento se tiene que analizar donde está la pelota y con qué fuerza y ángulo pegar.
+                    \item El ambiente es conocido ya que al agente se le puede proveer con las medidas y física de la pelota, además de modelos matemáticos para saber las trayectorias.
+                \end{enumerate}
+
+            \subsubsection{Tipo de agente}
+                Un agente basado en objetivos podría ser un buen agente para esta ocasión, se podría argumentar que con un agente basado en modelo sería suficiente porque se tiene una visión clara del entorno, pero el conocimiento actual del entorno no es suficiente para decidir ya que practicar tenis en la pared puede ser para ver cuantas veces puedes golpear la pelota continuamente, o puede ser cuantas veces puedes golpear la pelota pero solo con el revés, o tal vez quieres mantener un peloteo con mucha fuerza o tal vez solo quieres consistencia lenta, depende del objetivo que se tenga será la acción que el agente hará.
+                
+                Es necesario que el agente sea capaz de aprender, ya que puede ser que a cierta fuerza y ángulo la pelota salga volando o vaya a otra dirección, por lo cual en ese caso el aspecto a mejorar es la fuerza y el ángulo con el que golpea la pelota. Pero a la vez se podría programar para que este sepa con exactitud a través de modelos matemáticos la trayectoria exacta de la pelota con tal fuerza y ángulo.
+
+        \subsection{La realización de un salto alto}
+            \subsubsection{PEAS}
+                \begin{enumerate}
+                    \item Desempeño: Lograr el salto más alto
+                    \item Ambiente: Piso 
+                    \item Actuadores: Extremidades del agente. 
+                    \item Sensores: Fuerza, sensor de orientación.
+                \end{enumerate}
+
+            \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item El ambiente es totalmente observable ya que solo se necesita tener visión del piso para ver qué tan alto saltamos. (temp) Creo que también deberíamos de ser conscientes de si es que hay algo arriba del agente, para que no se de un trancazo
+                    \item El entorno es de solo un agente, ya que el agente que hace el salto es el único que realiza la acción y ningún otro agente entra en juego para alguna toma de decisión.
+                    \item El ambiente es determinístico, ya que con cierta fuerza, cierto impulso y cierto movimiento de las extremidades se puede realizar el salto, entonces el estado del medio está totalmente determinado por el estado actual y la acción ejecutada del agente. 
+                    \item Este se puede definir como secuencial, ya que la acción que se realiza al principio puede afectar la altura o el cómo te comportas en aire, por ejemplo si una extremidad está mal posicionada esta acción puede hacer que se salta muy poco, se salte a otro lado, o hasta que el agente pueda tener un intercalo y caerse.
+                    \item El entorno es dinámico ya que el ambiente cambia mientras se toma la  decisión, por ejemplo si en vez de levantar los brazos para arriba decide solo levantar uno entonces no va a saltar tanto como lo hubiera hecho. 
+                    \item Este es de carácter continuo ya que en el salto se está en un estado continuo, ya que hay muchas cosas que pueden afectar la altura del salto, ya sea el ángulo en el que saltas, la posición de las extremidades, el movimiento de las extremidades en el aire, hay muchas cosas que entran en juego y siempre es un movimiento continuo. 
+                    \item El ambiente es conocido, ya que solo se tiene el piso como ambiente y no hay factores externos desconocidos y todo es visible. 
+                \end{enumerate}
+
+            \subsubsection{Tipo de agente}
+                Se podría utilizar bien un agente basado en objetivos, ya que se tiene el objetivo de buscar el salto más alto y para eso el agente tiene que ver qué es lo que ocasionan sus acciones y cuales acciones son las mejores para poder alcanzar esa meta. Puede o no ser necesario que el agente sea capaz de aprender, ya que puede aprender por sí solo que además de la fuerza que movimientos o posición inicial de las extremidades generan una mayor altura al ahora de saltar, por lo cual puede aprender de eso, pero a la vez este ya puede estar definido por métodos matemáticos y con un intento puede sacar el salto más alto posible con las condiciones del agente.
+
+        \subsection{La puja de un artículo de subasta}
+    \section{Contribuciones}
+    \section{Conclusiones}
+\end{document}
