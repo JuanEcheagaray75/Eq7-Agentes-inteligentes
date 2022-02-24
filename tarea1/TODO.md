@@ -1,9 +1,23 @@
 # TODO
 
 - [ ] PEAS de todos las actividades
+  - [x] Juan Echeagaray
+  - [x] Oscar Banderas
+  - [x] Erika Martínez
+  - [ ] Emily Méndez
+  - [x] César Vázquez
 - [ ] Caracterización de los entornos
-- [ ] Escoger un agente y fundamentar por qué
-- [ ] ¿Es necesario que el agente sea capaz de aprender? ¿Qué elementos debe mejorar con la experiencia?
+  - [x] Juan Echeagaray
+  - [x] Oscar Banderas
+  - [x] Erika Martínez
+  - [ ] Emily Méndez
+  - [x] César Vázquez
+- [ ] Tipo de agente y capacidad de aprender (Mencionar los elementos a aprender también)
+  - [x] Juan Echeagaray
+  - [x] Oscar Banderas
+  - [ ] Erika Martínez
+  - [ ] Emily Méndez
+  - [x] César Vázquez
 
 ## Individual
 
@@ -15,7 +29,7 @@
   - [x] César Vázquez
 - Conclusiones
   - [ ] Juan Echeagaray
-  - [ ] Oscar Banderas
+  - [x] Oscar Banderas
   - [ ] Erika Martínez
   - [ ] Emily Méndez
   - [ ] César Vázquez

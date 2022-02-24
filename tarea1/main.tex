@@ -58,16 +58,24 @@
         \subsection{Realización de una rutina de piso de gimnasia}
             \subsubsection{PEAS}
                 \begin{enumerate}
-                    \item Desempeño
-                    \item Ambiente
-                    \item Actuadores
-                    \item Sensores
+                    \item Desempeño: calificación de los jueces, grado de dificultad de las acrobacias.
+                    \item Ambiente: el tapiz/suelo en donde se va a presentar la rutina.
+                    \item Actuadores: extremidades del agente.
+                    \item Sensores: giroscopio, cámara, acelerómetro                    
                 \end{enumerate}
 
             \subsubsection{Entorno}
                 \begin{enumerate}
-                    \item Pp
+                    \item El ambiente es completamente observable ya que es posible determinar el estado completo del medio ambiente en cada momento a partir de los sensores.
+                    \item Podemos considerarlo como un solo agente debido a que es solo un agente quien realiza la rutina. En caso de que sea una competencia, tendríamos 2 posibilidades: el ambiente puede ser competitivo o cooperativo debido a que si es una competencia de gimnasia contra otros agentes sería competitivo pero si no está compitiendo con otros agentes es cooperativo consigo mismo y el ambiente o inclusive con otros agentes si la rutina se presenta con más de un agente pero en caso de que pase esto último se convertiría en multiagente.
+                    \item El ambiente sería determinista debido a que el ambiente está determinado por el estado actual del ambiente y las acciones del agente.
+                    \item El ambiente es secuencial debido a que las acciones que realice el agente influyen en sus acciones futuras.
+                    \item El ambiente es estático debido a que el ambiente no cambia mientras el agente realiza la rutina, lo único que va cambiando son las acciones que realiza el agente.
+                    \item El ambiente es continuo debido a que sus acciones son continuas durante toda la rutina y no se perciben como acciones distintas y separadas entre sí.
+                    % Agregadas por Juan Echeagaray
+                    \item Categorizar el ambiente como conocido o desconocido dependerá de la objetividad de los jueces. Si asumimos que estos son completamente imparciales y dan la misma puntuación por las mismas rutinas, entonces el ambiente se puede catalogar como conocido; del caso contrario, en el que haya sesgos en las calificaciones de los jueces, el ambiente será desconocido, el agente tendrá que aprender a evitar (o aprovechar) la imparcialidad de los jueces
                 \end{enumerate}
+
             \subsubsection{Tipo de agente}
                 
         \subsection{Exploración de la superficie de los océanos de Titán}
@@ -91,9 +99,10 @@
                     \item El ambiente puede ser visto como conocido, ya que al agente se le pueden enseñar las propiedades físicas del lugar.
                 \end{enumerate}
 
-            \subsubsection{Tipo de agente}
+            \subsubsection{Tipo de agente y capacidad de aprender}
                 Para esta situación creemos que un agente basado en utilidad sería la mejor opción. Durante la misión, el agente tendrá la meta de explorar lo más posible este nuevo terreno, pero para que la misión sea exitosa, queremos que esta exploración sea llevada a cabo de la mejor manera posible, ahorrando energía, cubriendo la mayor área posible y manteniendo al agente lo más lejos del peligro posible.
 
+                Creemos que en esta situación el agente deberá de ser capaz de aprender, pues si bien hay un objetivo claro, que es la exploración de Titán, hay diversos factores que el agente debe de tomar en cuenta -como el ahorro de combustible y las condiciones del ambiente-, para su toma de decisiones; el agente no puede simplemente explorar lo más que pueda, así que una función de utilidad que especifique los sacrificios por hacer es necesaria. El agente al final del día deberá de aprender a explorar la mayor cantidad de terreno posible, usando la menor cantidad de combustible posible y realizando sus exploraciones en las situaciones ambientales más favorables.
                 % TODO Tal vez preguntarle al profesor respecto a la necesidad de este agente de aprender, puede que nos dé una mejor aclaración del tipo de situaciones que si requieren un aprendizaje
 
         \subsection{Un juego de soccer}
@@ -111,18 +120,44 @@
                     \item El entorno es multiagente, cooperativo entre los miembros de un mismo equipo, y competitivo contra los miembros del equipo contrario
                     \item (temp) (creo que el ambiente debe de tratarse como estocástico)
                     \item El entorno es de carácter secuencial, las acciones del agente pueden afectar todo lo que queda del partido
-                    \item El entorno es dinámico, el balón o los jugadores casi siempre están en movimiento pero en si el entorno siempre está cambiando. 
+                    \item El entorno es dinámico, el balón o los jugadores casi siempre están en movimiento pero en si el entorno siempre está cambiando
                     \item El entorno también es de carácter continuo, ya que este le demandará al agente de algún tipo de acción en todo momento
-                    \item El ambiente en este caso es conocido, el agente puede ser provisto de un modelo  físico de la realidad.
+                    \item El ambiente en este caso es conocido, el agente puede ser provisto de un modelo físico de la realidad y de las reglas del juego
                 \end{enumerate}
 
-            \subsubsection{Tipo de agente}
+            \subsubsection{Tipo de agente y capacidad de aprender}
                 Un agente basado en utilidad sería un buen prospecto para esta tarea, ya que la meta de ganar el juego y maximizar la diferencia de goles puede ser llevada a cabo de diferentes maneras, queremos que el agente lo realice de la manera más eficiente posible.
-
+                
+                Si bien, la meta última de este agente será la victoria, este tendrá que aprender las técnicas usadas por los demás agentes de su entorno, tendrá que aprender el estilo de juego de sus compañeros para aumentar la eficiencia total del equipo, y tendrá que poder predecir las jugadas que harán los miembros del equipo contrario para así poder responder de una forma pertinente
                 % TODO Especificar qué es lo que necesita aprender
 
         \subsection{Compra de libros usados de IA en internet}
+            \subsubsection{PEAS}
+                \begin{enumerate}
+                    \item Desempeño: número de libros, dinero utilizado, tiempo de envío, confianza del ambiente.
+                    \item Ambiente: Pagina web
+                    \item Actuadores: Extremidades del agente específicamente la mano o cualquier forma de interacción de humano máquina.
+                    \item Sensores: Mouse o pantalla táctil.
+                \end{enumerate}
             
+            \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item El ambiente es parcialmente observable, ya que no se puede visualizar (al mismo tiempo) todos los libros que hay en la página web donde se compran.
+                    \item El entorno es multi-agente, ya que hay una competencia constante por ver quién consigue el libro primero (no suponemos que existe una cantidad infinita en almacén)
+                    \item El ambiente es determinístico, ya que tu puedes controlar qué tipo de libros son los que te van a mostrar con los parámetros que tu elijas, o incluso si tu sabes que libro en específico vas a comprar
+                    \item El entorno es secuencial, ya que cada acción te lleva a otra, primero buscas, después disciernes y finalmente compras.
+                    \item El ambiente es semi estático ya que los parámetros pueden cambiar dependiendo de la página web y tal vez puede hacer un perfilado del usuario para sugerir libros.
+                    \item El entorno es continuo ya que, el agente tiene una interacción continua con en el ambiente.
+                    \item El ambiente es parcialmente conocido ya que el usuario no sabe qué perfilado utiliza la página para sugerirle los libros.
+                    \item El ambiente es competitivo debido a que la persona que tome el libro primero, es la persona que se lo lleva.
+                \end{enumerate}
+            
+            \subsubsection{Tipo de agente y capacidad de aprender}
+                % Originalmente estaba escrito recompensas, hay que aclarar a cuál se refería
+                El agente podría ser basado en objetivos ya que dependiendo de diferentes parámetros como la confianza que se le tiene a la página web, el precio y la calidad del autor del libro, podría diferir en la elección de compra para el usuario siempre y cuando la elección a elegir sea la mejor para él y para sus circunstancias.
+                
+                Es necesario que el agente aprenda ya que la experiencia le dará las habilidades de siempre elegir el mejor libro dentro de todas las opciones.
+
         \subsection{Práctica de tennis contra la pared}
             \subsubsection{PEAS}
             \begin{enumerate}
@@ -143,7 +178,7 @@
                     \item El ambiente es conocido ya que al agente se le puede proveer con las medidas y física de la pelota, además de modelos matemáticos para saber las trayectorias.
                 \end{enumerate}
 
-            \subsubsection{Tipo de agente}
+            \subsubsection{Tipo de agente y capacidad de aprender}
                 Un agente basado en objetivos podría ser un buen agente para esta ocasión, se podría argumentar que con un agente basado en modelo sería suficiente porque se tiene una visión clara del entorno, pero el conocimiento actual del entorno no es suficiente para decidir ya que practicar tenis en la pared puede ser para ver cuantas veces puedes golpear la pelota continuamente, o puede ser cuantas veces puedes golpear la pelota pero solo con el revés, o tal vez quieres mantener un peloteo con mucha fuerza o tal vez solo quieres consistencia lenta, depende del objetivo que se tenga será la acción que el agente hará.
                 
                 Es necesario que el agente sea capaz de aprender, ya que puede ser que a cierta fuerza y ángulo la pelota salga volando o vaya a otra dirección, por lo cual en ese caso el aspecto a mejorar es la fuerza y el ángulo con el que golpea la pelota. Pero a la vez se podría programar para que este sepa con exactitud a través de modelos matemáticos la trayectoria exacta de la pelota con tal fuerza y ángulo.
@@ -151,10 +186,10 @@
         \subsection{La realización de un salto alto}
             \subsubsection{PEAS}
                 \begin{enumerate}
-                    \item Desempeño: Lograr el salto más alto
+                    \item Desempeño: Altura lograda
                     \item Ambiente: Piso 
-                    \item Actuadores: Extremidades del agente. 
-                    \item Sensores: Fuerza, sensor de orientación.
+                    \item Actuadores: Extremidades del agente
+                    \item Sensores: Fuerza, sensor de orientación
                 \end{enumerate}
 
             \subsubsection{Entorno}
@@ -168,10 +203,24 @@
                     \item El ambiente es conocido, ya que solo se tiene el piso como ambiente y no hay factores externos desconocidos y todo es visible. 
                 \end{enumerate}
 
-            \subsubsection{Tipo de agente}
-                Se podría utilizar bien un agente basado en objetivos, ya que se tiene el objetivo de buscar el salto más alto y para eso el agente tiene que ver qué es lo que ocasionan sus acciones y cuales acciones son las mejores para poder alcanzar esa meta. Puede o no ser necesario que el agente sea capaz de aprender, ya que puede aprender por sí solo que además de la fuerza que movimientos o posición inicial de las extremidades generan una mayor altura al ahora de saltar, por lo cual puede aprender de eso, pero a la vez este ya puede estar definido por métodos matemáticos y con un intento puede sacar el salto más alto posible con las condiciones del agente.
+            \subsubsection{Tipo de agente y capacidad de aprender}
+                Se podría utilizar bien un agente basado en objetivos, ya que se tiene el objetivo de buscar el salto más alto y para eso el agente tiene que ver qué es lo que ocasionan sus acciones y cuales acciones son las mejores para poder alcanzar esa meta. 
+                
+                Puede o no ser necesario que el agente sea capaz de aprender, ya que puede aprender por sí solo que además de la fuerza que movimientos o posición inicial de las extremidades generan una mayor altura al ahora de saltar, por lo cual puede aprender de eso, pero a la vez este ya puede estar definido por métodos matemáticos y con un intento puede sacar el salto más alto posible con las condiciones del agente.
 
         \subsection{La puja de un artículo de subasta}
+            \subsubsection{PEAS}
+                \begin{enumerate}
+                    \item Desempeño: Vender el artículo al mejor postor, recaudar dinero para el beneficiario, obtener el artículo al mejor precio, costo del artículo
+                    \item Ambiente: Internet, compradores, subastador del artículo, artículo que se subasta
+                    \item Actuadores: Interés del público por el artículo, dinero con el que cuentan las personas, hablante
+                    \item Sensores: cámara, monitor que muestra las ofertas
+                \end{enumerate}
+            
+            \subsubsection{Entorno}
+
+            \subsubsection{Tipo de agente y capacidad de aprender}
+
     \section{Contribuciones}
         \begin{enumerate}
             \item Óscar Antonio Banderas Álvarez: Práctica de tenis contra la pared, realización de un salto alto
@@ -180,6 +229,16 @@
             \item Emily Rebeca Méndez Cruz: Portada, puja de un artículo de subasta
             \item César Guillermo Vázquez Álvarez: Compra de libros usados de IA en internet
         \end{enumerate}
-    \section{Conclusiones}
 
+    \section{Conclusiones}
+        \subsection{Óscar Antonio Banderas Álvarez}
+            De esta tarea pude ver de una mejor manera los tipos de agente, las propiedades del entorno y el entorno en sí. Puede verse claramente como una acción tan sencilla como saltar alto conlleva un análisis más profundo que solo saltar con fuerza y ver hasta qué altura llegamos, hay muchas acciones y circunstancias detrás de ese salto. Así uno se da cuenta que acciones muy sencillas para el ser humano que lo hacemos hasta por naturaleza es muy complicado de replicar a la perfección en una inteligencia artificial porque cuando analizas con una mayor profundidad todo el entorno puedes ver que acciones tan sencillas puede convertirse en una tarea complicada para un agente.
+
+        \subsection{Juan Pablo Echeagaray González}
+
+        \subsection{Erika Martínez Meneses}
+
+        \subsection{Emily Rebeca Méndez Cruz}
+
+        \subsection{César Guillermo Vázquez Álvarez}
 \end{document}
