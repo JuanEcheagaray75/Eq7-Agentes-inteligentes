@@ -1,0 +1,113 @@
+\documentclass{article}
+% Dependencias
+\usepackage[backend = biber, bibstyle = apa, citestyle = apa, style = apa, sorting = none, sortcites = true, block = none]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[]{amsthm}
+\usepackage{amsmath}
+\usepackage[]{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[letterpaper, margin=1.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\decimalpoint
+
+% Bibliografía
+\makeatletter
+\RequireBibliographyStyle{alphabetic}
+\makeatother
+\addbibresource{references.bib}
+
+\begin{document}
+    \begin{titlepage}
+        \begin{center}
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.13]{logo_itesm.png}\\ % Logo de la institución
+            \end{figure}
+        \vspace{5cm}
+        \LARGE{Instituto Tecnológico y de Estudios Superiores de Monterrey}\\
+        \fontsize{12}{14}\selectfont
+        \vspace{1cm}
+        \textbf{Caracterización del entorno de trabajo de un robot explorador en Marte}\\ % Nombre de la tarea
+        \vspace{0.7cm}
+        % Óscar Antonio Banderas Álvarez \\
+        % \vspace{0.2cm}
+        % A01568492 \\
+        % \vspace{0.2cm}
+        % Juan Pablo Echeagaray González\\ % Nombre de autor 1
+        % \vspace{0.2cm}
+        % A00830646 \\ % Matrícula autor 1
+        % \vspace{0.2cm}
+        % Erika Martínez Meneses \\
+        % \vspace{0.2cm}
+        % A01028621 \\
+        % \vspace{0.2cm}
+        % Emily Rebeca Méndez Cruz\\
+        % \vspace{0.2cm}
+        % A00830768 \\
+        % \vspace{0.2cm}
+        % César Guillermo Vázquez Alvarez \\
+        % \vspace{0.2cm}
+        % A01197857 \\
+        % Hay que ver si les gusta la portada con el formato de tabla
+        \begin{tabular}{|| c | c ||}
+            \hline
+            Alumno & Matrícula \\
+            \hline
+            Óscar Antonio Banderas Álvarez  & A01568492 \\
+            \hline
+            Juan Pablo Echeagaray González & A00830646 \\
+            \hline
+            Erika Martínez Meneses & A01028621 \\
+            \hline
+            Emily Rebeca Méndez Cruz & A00830768 \\
+            \hline
+            César Guillermo Vázquez Alvarez & A01197857 \\
+            \hline
+        \end{tabular} \\
+        \vspace{0.7cm}
+        Diseño de agentes inteligentes\\ % Materia
+        \vspace{0.2cm}
+        TC2032.101\\ % Clave de la materia
+        \vspace{0.2cm}
+        Juan Emmanuel Martínez Ledesma \\ % Nombre del profesor
+        \vspace{0.7cm}
+        27 de febrero del 2022 \\ % Fecha de entrega
+        \end{center}
+    \end{titlepage}
+
+    \section{Caracterización del entorno de trabajo de un robot explorador en Marte}
+        \subsection{Sensores}
+
+        \subsection{Actuadores}
+
+        \subsection{PEAS}
+
+        \subsection{Caracterización del entorno}
+            \begin{enumerate}
+                \item El ambiente puede ser catalogado como prácticamente completamente observable, ya que podemos hacer que el robot explorador disponga de todos los sensores que necesite para percibir toda la información requerida para su proceso de toma de decisiones
+                \item El entorno también puede ser catalogado como de un solo agente, hasta la fecha no hemos encontrado indicios de vida en el planeta rojo
+                \item Suponiendo que sea la primera vez que el robot visite Marte, su entorno sería estocástico, ya que hay cierta incertidumbre de como se verá el terreno, pero si el caso de que el robot visitará áreas previamente exploradas, podemos decir que el ambiente es determinista
+                \item El entorno en este caso es secuencial, las decisiones del explorador siempre afectarán su entorno y las posibles acciones que pueda tomar en un futuro
+                \item (TODO) Pensaría que el ambiente es semi dinámico, le podríamos bajar la medida de desempeño al agente por pasar mucho tiempo deliberando, por el hecho de estar gastando energía sin hacernos algo útil
+                \item El ambiente es continuo, se le pedirá al agente que tome decisiones y analice su entorno en todo momento, además de que sus acciones no serán tan simples como \emph{mover - derecha}
+                \item El entorno en este caso puede ser visto como conocido, un modelo físico que describa lo que sucedería en el sitio de exploración (dependiendo de las acciones del agente) puede ser provisto con facilidad
+            \end{enumerate}
+
+        \subsection{Tipo de agente}
+
+        \subsection{Capacidad de aprender}
+
+    \section{Contribuciones}
+        \begin{enumerate}
+            \item Óscar Antonio Banderas Álvarez:
+            \item Juan Pablo Echeagaray González: Caracterización del entorno
+            \item Erika Martínez Meneses:
+            \item Emily Rebeca Méndez Cruz:
+            \item César Guillermo Vázquez Álvarez:
+        \end{enumerate}
+    \section{Conclusiones}
+    \nocite{*}
+    \printbibliography
+\end{document}
