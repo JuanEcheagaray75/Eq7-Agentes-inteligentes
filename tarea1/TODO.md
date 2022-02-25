@@ -12,10 +12,10 @@
   - [x] Erika Martínez
   - [x] Emily Méndez
   - [x] César Vázquez
-- [ ] Tipo de agente y capacidad de aprender (Mencionar los elementos a aprender también)
+- [x] Tipo de agente y capacidad de aprender (Mencionar los elementos a aprender también)
   - [x] Juan Echeagaray
   - [x] Oscar Banderas
-  - [ ] Erika Martínez
+  - [x] Erika Martínez
   - [x] Emily Méndez
   - [x] César Vázquez
 
