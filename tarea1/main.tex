@@ -92,7 +92,7 @@
                 \begin{enumerate}
                     \item Podemos decir que el ambiente es prácticamente completamente  observable, ya que el agente tendrá los sensores necesarios para recibir toda la información pertinente.
                     \item El entorno puede considerarse como teniendo un solo agente, no esperaríamos encontrar vida u otros seres en este lugar remoto
-                    \item (temp) Ni idea en qué categoría podemos ponerlo, bien podríamos decir que es determinístico, pero creo que en la vida real se usaría más una clasificación de estocástico
+                    \item Creemos que el ambiente puede ser considerado como determinista, ya que el siguiente estado del entorno y del agente estarán completamente determinados por las acciones del mismo agente.
                     \item El ambiente es secuencial, las decisiones del agente respecto a su movimiento afectarán las decisiones que tome en el futuro
                     \item El entorno es dinámico, ya que el ambiente siempre está cambiando y el agente tiene que estar siempre tomando una decisión de que hacer. 
                     \item El ambiente también debe de ser visto como continuo, el agente tendrá que estar recibiendo y procesando información en todo momento
@@ -211,15 +211,25 @@
         \subsection{La puja de un artículo de subasta}
             \subsubsection{PEAS}
                 \begin{enumerate}
-                    \item Desempeño: Vender el artículo al mejor postor, recaudar dinero para el beneficiario, obtener el artículo al mejor precio, costo del artículo
+                    \item Desempeño: Vender el artículo al mejor postor, recaudar dinero para el beneficiario (suponiendo que el agente sea el subastador), obtener el artículo al mejor precio, costo del artículo
                     \item Ambiente: Internet, compradores, subastador del artículo, artículo que se subasta
                     \item Actuadores: Interés del público por el artículo, dinero con el que cuentan las personas, hablante
                     \item Sensores: cámara, monitor que muestra las ofertas
                 \end{enumerate}
             
             \subsubsection{Entorno}
+                \begin{enumerate}
+                    \item El ambiente es totalmente observable debido a que el agente tiene acceso al estado completo del entorno gracias a los sensores, es capaz de ver a los otros compradores, al encargado de la subasta y las ofertas que se van realizando.
+                    \item El ambiente es multiagente, ya que se está en un estado competitivo con otros, ya que son necesarios más de un agente para poder realizar la subasta.
+                    \item El ambiente es determinista debido a que las acciones del agente tienen una reacción en el medio, cuando hacen una oferta en la subasta, la siguiente acción del agente es ofertar para ganar.
+                    \item El ambiente es secuencial, ya que la decisión del agente afecta en el futuro. La decisión de ofertar del agente y seguir haciéndolo puede llegar a que sea el mejor postor y se lleve el artículo.
+                    \item El ambiente es discreto, en vista de que tenemos un número finito de estados. Podemos enumerar las acciones del agente: Entra a la subasta, da una oferta, compite por dar la mejor oferta y al final puede o no comprar el artículo.
+                    \item El ambiente es estático debido a que este no cambia conforme pasa el tiempo, sucede en el mismo lugar.
+                    \item El ambiente es parcialmente conocido,ya que se ven las ofertas y al encargado, pero al ser en línea no podemos ver a los demás compradores.
+                \end{enumerate}
 
             \subsubsection{Tipo de agente y capacidad de aprender}
+                El tipo de agente que tenemos en este caso es el agente basado en objetivos puesto que el agente tiene como meta la compra del artículo que se está subastando, así como dar las mejores ofertas para lograrlo. El agente no es necesario que aprenda dado que la meta es el artículo por el cual debe ofertar, puede tener un límite máximo de cuánto ofrecer pero en esta situación no se ve la necesidad de que aprenda.
 
     \section{Contribuciones}
         \begin{enumerate}
@@ -235,6 +245,8 @@
             De esta tarea pude ver de una mejor manera los tipos de agente, las propiedades del entorno y el entorno en sí. Puede verse claramente como una acción tan sencilla como saltar alto conlleva un análisis más profundo que solo saltar con fuerza y ver hasta qué altura llegamos, hay muchas acciones y circunstancias detrás de ese salto. Así uno se da cuenta que acciones muy sencillas para el ser humano que lo hacemos hasta por naturaleza es muy complicado de replicar a la perfección en una inteligencia artificial porque cuando analizas con una mayor profundidad todo el entorno puedes ver que acciones tan sencillas puede convertirse en una tarea complicada para un agente.
 
         \subsection{Juan Pablo Echeagaray González}
+            Después de esta actividad he comenzado a entender y apreciar más todo el proceso de estudio y diseño que lleva la generación de un agente de IA. Cuando empecé a hacer los ejercicios tenía una concepción bastante simplista de las posibles necesidades de un agente ante un ambiente desconocido, pero la realidad era completamente diferente, los retos a los que se enfrenta un agente al estar en un entorno complicado son extremadamente difíciles, por lo que no cualquier agente podría llevar a cabo la misión con éxito.
+
 
         \subsection{Erika Martínez Meneses}
 
