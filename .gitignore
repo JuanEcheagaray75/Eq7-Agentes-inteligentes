@@ -30,6 +30,8 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.bcf
+*.xml
 
 # VS Code
 .vscode
