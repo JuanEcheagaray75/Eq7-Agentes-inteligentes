@@ -7,8 +7,8 @@
 - [ ] PEAS - Emily Méndez
 - [ ] Entorno - Juan Echeagaray
   - [ ] Definir si el entorno es estático, dinámico, o semi-dinámico
-- [ ] Tipo de agente
-- [ ] Capacidad de aprender
+- [ ] Tipo de agente - César Vázquez
+- [ ] Capacidad de aprender - Antonio Banderas
 
 ## Individual
 
