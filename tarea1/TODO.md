@@ -30,10 +30,10 @@
 - Conclusiones
   - [x] Juan Echeagaray
   - [x] Oscar Banderas
-  - [ ] Erika Martínez
-  - [ ] Emily Méndez
-  - [ ] César Vázquez
+  - [x] Erika Martínez
+  - [x] Emily Méndez
+  - [x] César Vázquez
 
 ## Dudas
 
-- [ ] Preguntarle al profe sobre el tipo de ambiente para el caso de la exploración de Titán, determinista vs estocástico vs no determinista
+- [x] Preguntarle al profe sobre el tipo de ambiente para el caso de la exploración de Titán, determinista vs estocástico vs no determinista
