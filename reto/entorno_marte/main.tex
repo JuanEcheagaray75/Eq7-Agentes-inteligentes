@@ -80,7 +80,7 @@
 
     \section{Caracterización del entorno de trabajo de un robot explorador en Marte}
         \subsection{Tipos de sensores}
-        Sensores de los que dispone el robot:
+        Sensores de los que dispone el robot \parencite{bbc-news-mundo-2021}:
             \begin{enumerate}
                 \item 23 cámaras
                 \begin{enumerate}
@@ -110,11 +110,11 @@
         \begin{enumerate}
             \item 23 cámaras: Imágenes del planeta a explorar.
             \item 2 Micrófonos: Grabaciones de los sonidos captados durante el descenso y en la superficie del planeta a explorar.
-            \item Infrarrojos: Posición de objetos y formas, colores y diferencias de superficie incluso bajo condiciones ambientales extremas.
+            \item Infrarrojos: Posición de objetos y formas, colores y diferencias de superficie incluso bajo condiciones ambientales extremas \parencite{direct-2021}.
             \item Espectrómetro ultravioleta: Composición química del terreno.
             \item Estación meteorológica:Indicadores que muestran las condiciones climáticas en las diferentes zonas del planeta que están siendo exploradas.
             \item Espectrómetro de rayos x: Composición química del terreno.
-            \item Radar: Cambios en la conductividad, la permitividad eléctrica y la permeabilidad magnética.
+            \item Radar: Cambios en la conductividad, la permitividad eléctrica y la permeabilidad magnética \parencite{geo-radar-mars}. 
         \end{enumerate}
 
         Consideramos que los sensores más relevantes para que el robot pueda navegar de manera segura son las cámaras ya que con ellas se puede observar la superficie por la que planea avanzar y la superficie en donde planea aterrizar y decidir si es una superficie óptima y proseguir en esa dirección o cambiar el curso por un lado más seguro y la estación meteorológica por el mismo principio, que necesita saber si las condiciones climatológicas de la superficie por la que va a explorar son adecuadas para proseguir sin que se dañe ningún sistema ni parte del robot.
@@ -126,14 +126,27 @@
             \end{enumerate}
 
         \subsection{PEAS}
+            Descripción PEAS
+            \begin{enumerate}
+                \item Agente: Robot explorador
+                \item Rendimiento: Explorar el planeta buscando condiciones para la vida, reunir datos para enviar con éxito astronautas humanos a Marte.
+                \item Ambiente: Cuarto planeta del sistema solar, Marte.
+                \item Actuadores: Brazos y manos articuladas, ruedas y helicóptero.
+                \item Sensores: Cámaras, micrófono, infrarrojos, espectrómetro ultravioleta, estación meteorológica, espectrómetro de rayos x, radar. 
+            \end{enumerate}
+            
+            Desde el momento en que el agente está preparándose para el aterrizaje muestra que es un agente racional, debido que durante este proceso al haber más de 11 minutos de retardo en las comunicaciones con la Tierra, haciendo imposible el control manual por parte de los ingenieros, es decir, el agente está por su cuenta en este lapso de tiempo por lo que tiene que tomar una importante decisión de forma autónoma. Gracias a las cámaras que tiene el agente es capaz de tomar una imagen o varias imágenes mientras desciende, y con ayuda del mapa que trae implementado puede correlacionar las imágenes y reconocer por donde caer, luego calcular dónde se tomó la imagen y dónde aterriza. Debido a este sistema el agente es capaz de encontrar un lugar seguro para aterrizar sin necesidad de ponerse en peligro y sin depender del control manual. La decisión que tome el agente definirá si el aterrizaje es exitoso o no.
 
+            También al momento de la exploración del terreno, el agente realiza una recolección de rocas, pueden ser seleccionadas por el equipo científico, pero igual el agente puede elegir las mejores rocas en el caso de que las imágenes del terreno tarden en llegar a la Tierra debido a que el tiempo es valioso.
+            Brevemente podemos decir que el agente está programado para tomar la mejor decisión para un aterrizaje libre de peligros y además para seleccionar las mejores rocas del ambiente cuando no es posible hacerlo de manera manual.
+        
         \subsection{Caracterización del entorno}
             \begin{enumerate}
                 \item El ambiente puede ser catalogado como prácticamente completamente observable, ya que podemos hacer que el robot explorador disponga de todos los sensores que necesite para percibir toda la información requerida para su proceso de toma de decisiones
                 \item El entorno también puede ser catalogado como de un solo agente, hasta la fecha no hemos encontrado indicios de vida en el planeta rojo
                 \item Suponiendo que sea la primera vez que el robot visite Marte, su entorno sería estocástico, ya que hay cierta incertidumbre de como se verá el terreno, pero si el caso de que el robot visitará áreas previamente exploradas, podemos decir que el ambiente es determinista
                 \item El entorno en este caso es secuencial, las decisiones del explorador siempre afectarán su entorno y las posibles acciones que pueda tomar en un futuro
-                \item (TODO) Pensaría que el ambiente es semi dinámico, le podríamos bajar la medida de desempeño al agente por pasar mucho tiempo deliberando, por el hecho de estar gastando energía sin hacernos algo útil
+                \item Pensamos que el ambiente podría ser catalogado como \emph{semi-dinámico}; si bien el entorno no estará cambiando durante el proceso de decisión, el desempeño del agente podría irse reduciendo, haciendo alusión a que el agente estaría gastando energía mientras decide qué hacer.
                 \item El ambiente es continuo, se le pedirá al agente que tome decisiones y analice su entorno en todo momento, además de que sus acciones no serán tan simples como \emph{mover - derecha}
                 \item El entorno en este caso puede ser visto como conocido, un modelo físico que describa lo que sucedería en el sitio de exploración (dependiendo de las acciones del agente) puede ser provisto con facilidad
             \end{enumerate}
@@ -155,7 +168,7 @@
         \subsection{Óscar Antonio Banderas Álvarez}
 
         \subsection{Juan Pablo Echeagaray González}
-
+        
         \subsection{Erika Martínez Meneses}
             En esta actividad podemos observar la inteligencia artificial aplicada en un caso más real y ya no sólo en actividades hipotéticas y con esto observar cómo se comporta y la utilidad que tiene cada componente del robot. Es una forma de ver todavía más claro el tema e identificar las PEAS, el tipo de ambiente, tipo de agente, etc. en un agente real. Me pareció muy interesante el poder analizar cómo funciona un robot de ese estilo y ver como ha avanzado la tecnología, es impresionante ver todo lo que se necesita para explorar otro planeta y como lo han implementado en el robot. Me gustó investigar sobre el perseverance y realizar esta actividad.
             
@@ -164,6 +177,7 @@
         \subsection{César Guillermo Vázquez Álvarez}
         
     % Si algo se rompe, probablemente es por la bibliografía
+    \clearpage
     \nocite{*}
     \printbibliography
 \end{document}

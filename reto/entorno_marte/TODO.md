@@ -4,9 +4,9 @@
 
 - [x] Sensores - Erika Martínez
 - [ ] Actuadores - Antonio Banderas
-- [ ] PEAS - Emily Méndez
-- [ ] Entorno - Juan Echeagaray
-  - [ ] Definir si el entorno es estático, dinámico, o semi-dinámico
+- [x] PEAS - Emily Méndez
+- [x] Entorno - Juan Echeagaray
+  - [x] Definir si el entorno es estático, dinámico, o semi-dinámico
 - [ ] Tipo de agente - César Vázquez
 - [ ] Capacidad de aprender - Antonio Banderas
 
