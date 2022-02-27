@@ -79,9 +79,46 @@
     \end{titlepage}
 
     \section{Caracterización del entorno de trabajo de un robot explorador en Marte}
-        
-        \subsection{Sensores}
-    
+        \subsection{Tipos de sensores}
+        Sensores de los que dispone el robot:
+            \begin{enumerate}
+                \item 23 cámaras
+                \begin{enumerate}
+                    \item Cámara láser
+                    \item Cámara panorámica con zoom
+                \end{enumerate}
+                \item 2 Micrófonos
+                \item Infrarrojos
+                \item Espectrómetro ultravioleta
+                \item Estación meteorológica
+                \item Espectrómetro de rayos x para determinar elementos químicos
+                \item Radar
+            \end{enumerate}
+
+        Propósito de los sensores:
+        \begin{enumerate}
+            \item 23 cámaras: Durante el descenso, captar imágenes de la superficie de Marte para compararlas con la información en su computadora y corregir la trayectoria en caso necesario. Y una vez en el planeta captar imágenes del planeta a explorar.
+            \item 2 Micrófonos: Captar sonidos en el planeta. Uno para grabar sonidos durante el descenso y otro en la superficie.
+            \item Infrarrojos: Medir la radiación electromagnética infrarroja de los cuerpos en su campo de visión. Útil para medir la temperatura y detectar objetos calientes, y además permite la visión nocturna y la posibilidad de atravesar algunos objetos opacos para la luz visible.
+            \item Espectrómetro ultravioleta: Escanear el terreno y determinar su composición química.
+            \item Estación meteorológica: Medir el viento, el polvo, la radiación ultravioleta y otros indicadores del clima del planeta a explorar.
+            \item Espectrómetro de rayos x: Escanear el terreno y determinar su composición química.
+            \item Radar: Emisión y propagación de ondas electromagnéticas en un medio, con la posterior recepción de las reflexiones que se producen en sus discontinuidades.
+        \end{enumerate}
+
+        Información proporcionada:
+        \begin{enumerate}
+            \item 23 cámaras: Imágenes del planeta a explorar.
+            \item 2 Micrófonos: Grabaciones de los sonidos captados durante el descenso y en la superficie del planeta a explorar.
+            \item Infrarrojos: Posición de objetos y formas, colores y diferencias de superficie incluso bajo condiciones ambientales extremas.
+            \item Espectrómetro ultravioleta: Composición química del terreno.
+            \item Estación meteorológica:Indicadores que muestran las condiciones climáticas en las diferentes zonas del planeta que están siendo exploradas.
+            \item Espectrómetro de rayos x: Composición química del terreno.
+            \item Radar: Cambios en la conductividad, la permitividad eléctrica y la permeabilidad magnética.
+        \end{enumerate}
+
+        Consideramos que los sensores más relevantes para que el robot pueda navegar de manera segura son las cámaras ya que con ellas se puede observar la superficie por la que planea avanzar y la superficie en donde planea aterrizar y decidir si es una superficie óptima y proseguir en esa dirección o cambiar el curso por un lado más seguro y la estación meteorológica por el mismo principio, que necesita saber si las condiciones climatológicas de la superficie por la que va a explorar son adecuadas para proseguir sin que se dañe ningún sistema ni parte del robot.
+
         \subsection{Actuadores}
             \begin{enumerate}
                 \item Brazos y manos articuladas: La función de estos es poder recoger cosas, ya sea una piedra para poder analizarla mejor u otras cosas que se podrían encontrar en Marte. 
@@ -120,7 +157,8 @@
         \subsection{Juan Pablo Echeagaray González}
 
         \subsection{Erika Martínez Meneses}
-
+            En esta actividad podemos observar la inteligencia artificial aplicada en un caso más real y ya no sólo en actividades hipotéticas y con esto observar cómo se comporta y la utilidad que tiene cada componente del robot. Es una forma de ver todavía más claro el tema e identificar las PEAS, el tipo de ambiente, tipo de agente, etc. en un agente real. Me pareció muy interesante el poder analizar cómo funciona un robot de ese estilo y ver como ha avanzado la tecnología, es impresionante ver todo lo que se necesita para explorar otro planeta y como lo han implementado en el robot. Me gustó investigar sobre el perseverance y realizar esta actividad.
+            
         \subsection{Emily Rebeca Méndez Cruz}
 
         \subsection{César Guillermo Vázquez Álvarez}

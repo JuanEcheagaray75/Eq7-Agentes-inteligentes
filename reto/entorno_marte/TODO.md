@@ -2,7 +2,7 @@
 
 ## Investigación
 
-- [ ] Sensores - Erika Martínez
+- [x] Sensores - Erika Martínez
 - [ ] Actuadores - Antonio Banderas
 - [ ] PEAS - Emily Méndez
 - [ ] Entorno - Juan Echeagaray
@@ -14,16 +14,16 @@
 
 ### Contribuciones
 
-- [ ] Juan Echeagaray
-- [ ] Oscar Banderas
-- [ ] Erika Martínez
-- [ ] Emily Méndez
-- [ ] César Vázquez
+- [x] Juan Echeagaray
+- [x] Oscar Banderas
+- [x] Erika Martínez
+- [x] Emily Méndez
+- [x] César Vázquez
 
 ### Conclusiones
 
 - [ ] Juan Echeagaray
 - [ ] Oscar Banderas
-- [ ] Erika Martínez
+- [x] Erika Martínez
 - [ ] Emily Méndez
 - [ ] César Vázquez
