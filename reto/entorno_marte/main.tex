@@ -82,7 +82,7 @@
         \subsection{Tipos de sensores}
         Sensores de los que dispone el robot \parencite{bbc-news-mundo-2021}:
             \begin{enumerate}
-                \item 23 cámaras
+                \item 23 Cámaras
                 \begin{enumerate}
                     \item Cámara láser
                     \item Cámara panorámica con zoom
@@ -91,42 +91,42 @@
                 \item Infrarrojos
                 \item Espectrómetro ultravioleta
                 \item Estación meteorológica
-                \item Espectrómetro de rayos x para determinar elementos químicos
+                \item Espectrómetro de rayos X para determinar elementos químicos
                 \item Radar
             \end{enumerate}
 
         Propósito de los sensores:
         \begin{enumerate}
-            \item 23 cámaras: Durante el descenso, captar imágenes de la superficie de Marte para compararlas con la información en su computadora y corregir la trayectoria en caso necesario. Y una vez en el planeta captar imágenes del planeta a explorar.
+            \item 23 Cámaras: Durante el descenso, captar imágenes de la superficie de Marte para compararlas con la información en su computadora y corregir la trayectoria en caso necesario. Y una vez en el planeta captar imágenes del planeta a explorar.
             \item 2 Micrófonos: Captar sonidos en el planeta. Uno para grabar sonidos durante el descenso y otro en la superficie.
             \item Infrarrojos: Medir la radiación electromagnética infrarroja de los cuerpos en su campo de visión. Útil para medir la temperatura y detectar objetos calientes, y además permite la visión nocturna y la posibilidad de atravesar algunos objetos opacos para la luz visible.
             \item Espectrómetro ultravioleta: Escanear el terreno y determinar su composición química.
             \item Estación meteorológica: Medir el viento, el polvo, la radiación ultravioleta y otros indicadores del clima del planeta a explorar.
-            \item Espectrómetro de rayos x: Escanear el terreno y determinar su composición química.
+            \item Espectrómetro de rayos X: Escanear el terreno y determinar su composición química.
             \item Radar: Emisión y propagación de ondas electromagnéticas en un medio, con la posterior recepción de las reflexiones que se producen en sus discontinuidades.
         \end{enumerate}
 
         Información proporcionada:
         \begin{enumerate}
-            \item 23 cámaras: Imágenes del planeta a explorar.
+            \item 23 Cámaras: Imágenes del planeta a explorar.
             \item 2 Micrófonos: Grabaciones de los sonidos captados durante el descenso y en la superficie del planeta a explorar.
             \item Infrarrojos: Posición de objetos y formas, colores y diferencias de superficie incluso bajo condiciones ambientales extremas \parencite{direct-2021}.
             \item Espectrómetro ultravioleta: Composición química del terreno.
-            \item Estación meteorológica:Indicadores que muestran las condiciones climáticas en las diferentes zonas del planeta que están siendo exploradas.
-            \item Espectrómetro de rayos x: Composición química del terreno.
+            \item Estación meteorológica: Indicadores que muestran las condiciones climáticas en las diferentes zonas del planeta que están siendo exploradas.
+            \item Espectrómetro de rayos X: Composición química del terreno.
             \item Radar: Cambios en la conductividad, la permitividad eléctrica y la permeabilidad magnética \parencite{geo-radar-mars}. 
         \end{enumerate}
 
-        Consideramos que los sensores más relevantes para que el robot pueda navegar de manera segura son las cámaras ya que con ellas se puede observar la superficie por la que planea avanzar y la superficie en donde planea aterrizar y decidir si es una superficie óptima y proseguir en esa dirección o cambiar el curso por un lado más seguro y la estación meteorológica por el mismo principio, que necesita saber si las condiciones climatológicas de la superficie por la que va a explorar son adecuadas para proseguir sin que se dañe ningún sistema ni parte del robot.
+        Consideramos que los sensores más relevantes para que el robot pueda navegar de manera segura son las cámaras, ya que con ellas se puede observar la superficie por la que planea avanzar y la superficie en donde planea aterrizar y decidir si es una superficie óptima y proseguir en esa dirección o cambiar el curso por un lado más seguro, y la estación meteorológica por el mismo principio, que necesita saber si las condiciones climatológicas de la superficie por la que va a explorar son adecuadas para proseguir sin que se dañe ningún sistema ni parte del robot.
 
         \subsection{Actuadores}
             \begin{enumerate}
-                \item Brazos y manos articuladas: La función de estos es poder recoger cosas, ya sea una piedra para poder analizarla mejor u otras cosas que se podrían encontrar en Marte. Además que con estos el robot puede recoger muestras. 
+                \item Brazos y manos articuladas: La función de estos es poder recoger cosas, ya sea una piedra para poder tomarla de muestra y analizarla u otras cosas que se encuentren en la superficie de Marte. Su principal función es recoger muestras. 
                 \item Ruedas: Su función principal es proporcionar movimiento del robot a lo largo de la superficie de Marte.
                 \item Helicóptero: La función de este es poder dar una mejor imagen de la superficie, ya que habrá momentos donde el robot no podrá recorrer la superficie ya sea por que está muy rocoso o por otras circunstancias pero en ese caso este helicóptero será de gran ayuda. 
-                \item Productor de oxígeno: El MOXIE, que es el productor de oxígeno, su único propósito es hacer oxígeno a partir del dióxido de carbono de la atmósfera de Marte. Esto se hizo ya que este oxígeno que servirá como un combustible para explorar Marte y poder lanzar cohetes de regreso a la Tierra.
+                \item Productor de oxígeno: El MOXIE, que es el productor de oxígeno, su único propósito es hacer oxígeno a partir del dióxido de carbono de la atmósfera de Marte. Esto se hizo con el fin de que este oxígeno que produce servirá como un combustible para explorar Marte y poder lanzar cohetes de regreso a la Tierra.
                 \item Mecanismos para taladrar y pulverizar roca: La función de esta es poder tomar muestras más pequeñas de rocas para así poder darle un mejor análisis. 
-                \item Compartimento de almacenamiento
+                \item Compartimento de almacenamiento: Espacio donde se guardarán las muestras recolectadas durante su estadía. 
             \end{enumerate}
 
         \subsection{PEAS}
@@ -146,20 +146,20 @@
         
         \subsection{Caracterización del entorno}
             \begin{enumerate}
-                \item El ambiente puede ser catalogado como prácticamente completamente observable, ya que podemos hacer que el robot explorador disponga de todos los sensores que necesite para percibir toda la información requerida para su proceso de toma de decisiones
-                \item El entorno también puede ser catalogado como de un solo agente, hasta la fecha no hemos encontrado indicios de vida en el planeta rojo
-                \item Suponiendo que sea la primera vez que el robot visite Marte, su entorno sería estocástico, ya que hay cierta incertidumbre de como se verá el terreno, pero si el caso de que el robot visitará áreas previamente exploradas, podemos decir que el ambiente es determinista
-                \item El entorno en este caso es secuencial, las decisiones del explorador siempre afectarán su entorno y las posibles acciones que pueda tomar en un futuro
+                \item El ambiente puede ser catalogado como prácticamente completamente observable, ya que podemos hacer que el robot explorador disponga de todos los sensores que necesite para percibir toda la información requerida para su proceso de toma de decisiones.
+                \item El entorno también puede ser catalogado como de un solo agente, hasta la fecha no hemos encontrado indicios de vida en el planeta rojo.
+                \item Suponiendo que sea la primera vez que el robot visite Marte, su entorno sería estocástico, ya que hay cierta incertidumbre de cómo se verá el terreno, pero si es el caso de que el robot visitará áreas previamente exploradas, podemos decir que el ambiente es determinista
+                \item El entorno en este caso es secuencial, las decisiones del explorador siempre afectarán su entorno y las posibles acciones que pueda tomar en un futuro.
                 \item Pensamos que el ambiente podría ser catalogado como \emph{semi-dinámico}; si bien el entorno no estará cambiando durante el proceso de decisión, el desempeño del agente podría irse reduciendo, haciendo alusión a que el agente estaría gastando energía mientras decide qué hacer.
-                \item El ambiente es continuo, se le pedirá al agente que tome decisiones y analice su entorno en todo momento, además de que sus acciones no serán tan simples como \emph{mover - derecha}
+                \item El ambiente es continuo, debido a que se le pedirá al agente que tome decisiones y analice su entorno en todo momento, además de que sus acciones no serán tan simples como \emph{mover - derecha}.
                 \item El entorno en este caso puede ser visto como conocido, un modelo físico que describa lo que sucedería en el sitio de exploración (dependiendo de las acciones del agente) puede ser provisto con facilidad
             \end{enumerate}
 
         \subsection{Tipo de agente}
-            Una de las características clave de los Mars Rover son su capacidad de actuar de forma independiente. En la Tierra, esto significaría que el vehículo es capaz de tomar decisiones por sí mismo; en otras palabras, es capaz de realizar tareas sin necesidad de interacción humana. Sin embargo, en el duro entorno de Marte, la realización de las tareas más sencillas requiere una gran supervisión humana. Para llevar a cabo investigaciones científicas en la superficie de otro planeta, se necesita un sistema complejo: uno que sea autónomo y adaptable. Es por eso que creemos que el tipo de agente que seria es agente basado en utilidad, ya que la metas no son suficientes o pueden ser inalcanzables, pero tener avances para poder llegar a ellas, ayuda en la exploración ya que pondera las metas mas alcanzables, y así el agente se asegura de poder lograr hacer la mayor cantidad de tareas posibles y alcanzables.
+            Una de las características clave de los Mars Rover son su capacidad de actuar de forma independiente. En la Tierra, esto significaría que el vehículo es capaz de tomar decisiones por sí mismo; en otras palabras, es capaz de realizar tareas sin necesidad de interacción humana. Sin embargo, en el duro entorno de Marte, la realización de las tareas más sencillas requiere una gran supervisión humana. Para llevar a cabo investigaciones científicas en la superficie de otro planeta, se necesita un sistema complejo: uno que sea autónomo y adaptable. Es por eso que creemos que el tipo de agente que sería es agente basado en utilidad, ya que la metas no son suficientes o pueden ser inalcanzables, pero tener avances para poder llegar a ellas ayuda en la exploración, ya que pondera las metas mas alcanzables y así el agente se asegura de poder lograr hacer la mayor cantidad de tareas posibles y alcanzables.
 
         \subsection{Capacidad de aprender}
-            Sí es necesario que el agente sea capaz de aprender durante su exploración, ya que como no conocemos muy bien Marte habrá muchas cosas nuevas de las cuales el agente tendrá que saber, por lo cual aprenderá de la experiencia que tendrá en la superficie. Otra cosa de la que tendrá que aprender es de las rocas que vaya analizando y registrando, ya que no sería útil que esté usando todo el combustible que taladre, pulverice y analice rocas que ya había analizado con anterioridad, por lo cual eso es un elemento que deberá mejorar con la experiencia, ya que habrá rocas que sean más duras y tal vez necesite usar más energía. Otro elemento que deberá mejorar con la experiencia es poder predecir o medir con mayor exactitud el clima en el área, ya que puede que en algunas áreas haya tormentas de aire que harían que el robot falle o que una roca choque contra el robot, el robot ya tiene las herramientas para medir el clima, pero con la experiencia podrá predecir el clima en ciertas áreas de Marte. 
+            Sí es necesario que el agente sea capaz de aprender durante su exploración, ya que como no conocemos muy bien Marte habrá muchas cosas nuevas de las cuales el agente tendrá que saber, por lo cual aprenderá de la experiencia que tendrá en la superficie. Otra cosa de la que tendrá que aprender es de las rocas que vaya analizando y registrando, ya que no sería útil que esté usando todo el combustible que taladre, pulverice y analice rocas que ya había analizado con anterioridad, por lo cual eso es un elemento que deberá mejorar con la experiencia, ya que habrá rocas que sean más duras y tal vez necesite usar más energía. Otro elemento que deberá mejorar con la experiencia es poder predecir o medir con mayor exactitud el clima en el área, dado que puede ser que en algunas áreas haya tormentas de aire que harían que el robot falle o que una roca choque contra él, el robot ya tiene las herramientas para medir el clima, pero con la experiencia podrá predecir el clima en ciertas áreas de Marte y así guiarse para ir a las zonas más optimas. 
     \section{Contribuciones}
         \begin{enumerate}
             \item Óscar Antonio Banderas Álvarez: Actuadores, capacidad de aprender
