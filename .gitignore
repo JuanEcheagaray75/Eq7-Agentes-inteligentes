@@ -4,6 +4,9 @@
 *.gslides
 *.ini
 
+# Data files
+*.img
+
 # Latex docs
 *.aux
 *.glo
